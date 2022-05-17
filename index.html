@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page </title>
+   <style>
+       body{
+          background-image:url(https://unsplash.com/photos/P-yzuyWFEIk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bmF0dXJlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE2NTA0NDg2NTk&force=true&w=1920);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+       }
+
+       .main{
+           height: 100vh;
+
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+         .form{
+            border: 2px black solid;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(62, 199, 241, 0.2);
+            border-radius: 20%;
+            font-weight: bold;
+            box-shadow: 0 0 30px rgb(255, 145, 0);
+            margin:100px;
+            
+         }
+         .form-item{
+             margin: 10px;
+         }
+
+         .set{
+             color:brown;
+             background-color: aliceblue;
+             border-radius: 30px;
+         }
+         .details{
+             color: white;
+         }
+         #dltebtn{
+           color: darkblue;
+         }
+    </style>
+</head>
+<body> 
+    <div class="main">
+        <div class="form" >
+            <form action="" id="form">
+                <div class="form-item">
+                  <label for="name"> Name  :</label>
+                  <input type="text" name="Name" id="form-name">
+
+                </div>
+                <div class="form-item">
+                <label  for="email">Email:</label>
+                <input type="email" name="email" id="form-email">
+                </div>
+        
+                <div class="form-item" >
+                <label for="phone">Phone number :</label>
+                <input type="text" name="phone" id="form-number">
+                </div>
+                
+                <div class="form-item">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" > MAle </input>
+                    <input type="radio" id="female" name="gender" >Female</input>
+                    <input type="radio" id="other" name="gender" > Other </input>
+                </div> 
+                <div class="form-item">
+                    D.O.B: <input type="date" id="form-DOB"> </input>
+                </div>
+                <div></div>
+                
+                
+                <!-- <div class="form-item">
+                <label for="hobby"> Hobby :</label>
+                <input type="checkbox" name="hobby">Game </input>
+                <input type="checkbox" name="hobby" > study </input>
+                <input type="checkbox" name="hobby" > sleep </input>
+                </div> -->
+                        <button type="submit" >submit</button>
+                        <button type="reset" >reset</button>
+                   
+
+            </form>
+           
+        </div>
+     </div>
+        <div class="details">
+                <h1>Your details</h1>
+                 <h3 id="name"></h3>
+                 <h3 id="email"></h3>
+                 <h3 id="number"></h3>
+                 <h3 id="gender"></h3>
+                 <h3 id="DOB"></h3>
+                 <button id="dltebtn">Delete details </button>
+            </div>
+     <script src="index.js"></script>
+</body>
+</html>
